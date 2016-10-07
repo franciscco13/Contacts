@@ -1,0 +1,304 @@
+@import 'textstyle';
+@import 'shadows';
+
+$color: blue;
+$alt-color: #ffc107;
+
+$break-small: 600px;
+
+$profile-btn__img__side: 40px;
+ 
+
+.tabcontainer{
+	.default-tab{
+		padding: 10px 20px;
+		@extend .textstyle-tags;
+		i{
+			padding-right: 10px;
+		}
+	}
+}
+
+
+.navbar{ 
+	background-color: #fff;
+	width: 100%;
+	padding: 20px; 
+	.admin-section{
+		cursor:pointer;
+		float: right;
+		.name{
+			display: inline-block;
+			padding: 0 10px;
+			text-transform: uppercase;}
+		.img{
+			border-radius: 50%;
+			background-color: $color;
+			color: white;
+			display: inline-block;
+			width: $profile-btn__img__side;
+			height: $profile-btn__img__side;
+			line-height: $profile-btn__img__side;
+			text-align: center;
+		}
+	}
+}
+
+
+table{
+	width: 100%;
+	@extend .textstyle-tags;
+	font-weight: 400;
+	text-transform: none;
+	font-size: 14px;	
+
+
+	
+	th, td{
+		display: inline-block;
+		padding: 5px 0;
+		text-align: left;		
+		@media screen and(max-width: $break-small){
+			padding: 10px 0;
+		}
+	}
+
+	th{
+		text-transform: uppercase;
+		cursor: pointer;
+		font-size: 10px;
+		padding: 15px 0;	
+		letter-spacing: 2px;	
+		color: $color;}
+
+	tr{
+		width: 100%;
+		padding: 0 15%;
+		display: block;
+	}
+
+	th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
+	td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5){
+		width: 16%;
+	}
+	
+	td:nth-child(6), td:nth-child(7){
+		width: 10%;
+	}
+
+  
+	
+	thead tr{
+		border-bottom: solid 1px $color;}
+	thead th{
+		&.selected-up:after{
+			display: inline-block;	
+			content: "\f11c";
+			font-family: "Flaticon";
+			padding: 0 5px;
+		}
+		&.selected-down:after{
+			display: inline-block;	
+			content: "\f11c";
+			font-family: "Flaticon";
+			padding: 0 5px; /* Safari */ /* IE 9 */
+		   	transform: rotate(180deg);
+		}
+	}
+
+	tbody tr{
+		transition: 0.3s;
+		border-bottom: solid 1px #ddd;
+		&:hover{
+			background-color: #eee;
+		}
+	}
+
+
+	td.modify, td.delete{
+		cursor:pointer;
+		width: 60px;
+		text-align: center;
+		&:hover{
+			color: $color;	}
+	}
+
+	td.save, td.unsave{ 
+		display: none;
+		cursor: pointer;
+		width: 60px; 
+		text-align: center;
+		position: relative;
+		i{
+			position: relative;
+			z-index: 2;
+		}
+		&:before{
+			content: "";
+			display: block;
+			position: absolute; 
+			background-color: rgba(black,0.3);
+			width:  0px;
+			height: 0px;
+			border-radius: 50%;
+			top: 20px;
+			left: 30px;			
+			transition: 0.3s;
+			z-index: 0;
+		}
+
+		&:hover{  
+			&:before{
+				width: 50px;
+				height: 50px;
+				top: -5px;
+				left: 5px;
+			}
+		}
+	}
+}
+
+table input[type=text]{
+	border-bottom: none!important;	
+	padding: 0!important;
+	margin: 0!important;
+	font-size: 14px;
+	font-family: "Roboto", serif;
+	font-weight: 500;
+
+	&:disabled{
+		color: #444; 
+	}
+}
+
+.fixed-row{ 
+	bottom: 0;
+	z-index: 100;
+	left: 0;
+	position: fixed;
+	background-color: $color!important;
+	color: white!important;
+	input{
+		color: white!important;
+	}
+	border-bottom: none;
+	padding-top: 10px; 
+	padding-bottom: 10px;
+}
+
+.last-modified{
+	background-color: rgba($color,0.1); 
+}
+
+#add{
+	transition: 0.6s ease-in-out;
+	position: fixed;
+	
+	input{
+		width: 150px;}
+	h1{
+		color: $alt-color;
+		@extend .textstyle-tags;
+		font-size: 10px;
+	}
+	
+	.new_btn{ 
+		cursor: pointer;
+		width: 60px; 
+		height: 60px;
+		text-align: center;
+		position: relative;
+		i{
+			display: block;
+			position: relative;
+			z-index: 2;
+		}
+		&:before{
+			content: "";
+			display: block;
+			position: absolute; 
+			background-color: rgba(black,0.3);
+			width:  0px;
+			height: 0px;
+			border-radius: 50%;
+			top: 15px;
+			left: 30px;			
+			transition: 0.3s;
+			z-index: 0;
+		}
+
+		&:hover{  
+			&:before{
+				width: 50px;
+				height: 50px;
+				top: -10px;
+				left: 5px;
+			}
+		}
+	}
+}
+
+.state__btn{	
+	bottom: 3.3333%;
+	right: 3.3333%;
+	background-color: $color;
+	color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	@include card(3);
+	
+	.input-field, h1, .new_btn{
+		display: none;
+	}
+}
+
+.state__form{
+	bottom: 0%;
+	right: 0%;
+	width: 100%; 
+	@include card(10);
+	background-color: #333;
+	color: white!important;
+	padding: 30px 10% 10px 10%; 
+	max-height: 200px;
+
+	h1{
+		padding-top: 0;
+		margin-top: 0;
+		display: block;
+	}
+	i{
+		display: none;}
+	.new_btn{
+		display: inline-block;
+	}
+	
+	.input-field{
+		margin: 0 10px;
+		display: inline-block;
+		input{
+			color:  white;
+			border-bottom: default;
+		}
+	}
+}
+
+.pin-top {
+    position: relative;
+  }
+
+  // Class for when element is below threshold
+  .pin-bottom {
+    position: relative;
+  }
+
+  // Class for when element is pinned
+  .pinned {
+  	width: 100%;
+  	background-color: #fff;
+    position: fixed !important;
+  }

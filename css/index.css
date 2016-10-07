@@ -1,0 +1,279 @@
+/* TEXT STYLES */
+.textstyle-cdname {
+  font-family: "Tiempos", serif;
+  color: #444;
+  font-weight: 600; }
+
+.textstyle-date {
+  font-family: "Walfork", serif;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.textstyle-artistname {
+  font-family: "Walfork", serif;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.textstyle-artistcovername {
+  font-family: "Tiempos Headline", serif;
+  font-weight: 600; }
+
+.textstyle-cddescription {
+  font-family: "Tiempos", "Georgia", serif;
+  text-align: justify;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #222; }
+
+.textstyle-tags, .textstyle-tabs, .tabcontainer .default-tab, table, #add h1 {
+  text-transform: uppercase;
+  font-family: "Walfork", serif;
+  letter-spacing: 1px;
+  font-weight: 600; }
+
+.textstyle-tabs {
+  font-weight: 700;
+  font-size: 16px; }
+
+.textstyle-tracklist {
+  font-family: "Tiempos", "Georgia", serif;
+  color: #222;
+  font-size: 15px;
+  font-weight: 400; }
+
+.textstyle-button {
+  text-transform: uppercase;
+  color: #333;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600; }
+
+.textstyle-cdname-min {
+  font-family: "Walfork", sans-serif;
+  font-weight: 600; }
+
+.textstyle-artistname-min {
+  font-family: "Walfork", sans-serif;
+  font-style: italic;
+  font-weight: 400; }
+
+.tabcontainer .default-tab {
+  padding: 10px 20px; }
+  .tabcontainer .default-tab i {
+    padding-right: 10px; }
+
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px; }
+  .navbar .admin-section {
+    cursor: pointer;
+    float: right; }
+    .navbar .admin-section .name {
+      display: inline-block;
+      padding: 0 10px;
+      text-transform: uppercase; }
+    .navbar .admin-section .img {
+      border-radius: 50%;
+      background-color: blue;
+      color: white;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center; }
+
+table {
+  width: 100%;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px; }
+  table th, table td {
+    display: inline-block;
+    padding: 5px 0;
+    text-align: left; }
+    @media screen and (max-width: 600px) {
+      table th, table td {
+        padding: 10px 0; } }
+  table th {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 15px 0;
+    letter-spacing: 2px;
+    color: blue; }
+  table tr {
+    width: 100%;
+    padding: 0 15%;
+    display: block; }
+  table th:nth-child(1), table th:nth-child(2), table th:nth-child(3), table th:nth-child(4), table th:nth-child(5),
+  table td:nth-child(1), table td:nth-child(2), table td:nth-child(3), table td:nth-child(4), table td:nth-child(5) {
+    width: 16%; }
+  table td:nth-child(6), table td:nth-child(7) {
+    width: 10%; }
+  table thead tr {
+    border-bottom: solid 1px blue; }
+  table thead th.selected-up:after {
+    display: inline-block;
+    content: "\f11c";
+    font-family: "Flaticon";
+    padding: 0 5px; }
+  table thead th.selected-down:after {
+    display: inline-block;
+    content: "\f11c";
+    font-family: "Flaticon";
+    padding: 0 5px;
+    /* Safari */
+    /* IE 9 */
+    transform: rotate(180deg); }
+  table tbody tr {
+    transition: 0.3s;
+    border-bottom: solid 1px #ddd; }
+    table tbody tr:hover {
+      background-color: #eee; }
+  table td.modify, table td.delete {
+    cursor: pointer;
+    width: 60px;
+    text-align: center; }
+    table td.modify:hover, table td.delete:hover {
+      color: blue; }
+  table td.save, table td.unsave {
+    display: none;
+    cursor: pointer;
+    width: 60px;
+    text-align: center;
+    position: relative; }
+    table td.save i, table td.unsave i {
+      position: relative;
+      z-index: 2; }
+    table td.save:before, table td.unsave:before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      top: 20px;
+      left: 30px;
+      transition: 0.3s;
+      z-index: 0; }
+    table td.save:hover:before, table td.unsave:hover:before {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      left: 5px; }
+
+table input[type=text] {
+  border-bottom: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 14px;
+  font-family: "Roboto", serif;
+  font-weight: 500; }
+  table input[type=text]:disabled {
+    color: #444; }
+
+.fixed-row {
+  bottom: 0;
+  z-index: 100;
+  left: 0;
+  position: fixed;
+  background-color: blue !important;
+  color: white !important;
+  border-bottom: none;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .fixed-row input {
+    color: white !important; }
+
+.last-modified {
+  background-color: rgba(0, 0, 255, 0.1); }
+
+#add {
+  transition: 0.6s ease-in-out;
+  position: fixed; }
+  #add input {
+    width: 150px; }
+  #add h1 {
+    color: #ffc107;
+    font-size: 10px; }
+  #add .new_btn {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    position: relative; }
+    #add .new_btn i {
+      display: block;
+      position: relative;
+      z-index: 2; }
+    #add .new_btn:before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      top: 15px;
+      left: 30px;
+      transition: 0.3s;
+      z-index: 0; }
+    #add .new_btn:hover:before {
+      width: 50px;
+      height: 50px;
+      top: -10px;
+      left: 5px; }
+
+.state__btn {
+  bottom: 3.3333%;
+  right: 3.3333%;
+  background-color: blue;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19); }
+  .state__btn .input-field, .state__btn h1, .state__btn .new_btn {
+    display: none; }
+
+.state__form {
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  background-color: #333;
+  color: white !important;
+  padding: 30px 10% 10px 10%;
+  max-height: 200px; }
+  .state__form h1 {
+    padding-top: 0;
+    margin-top: 0;
+    display: block; }
+  .state__form i {
+    display: none; }
+  .state__form .new_btn {
+    display: inline-block; }
+  .state__form .input-field {
+    margin: 0 10px;
+    display: inline-block; }
+    .state__form .input-field input {
+      color: white;
+      border-bottom: default; }
+
+.pin-top {
+  position: relative; }
+
+.pin-bottom {
+  position: relative; }
+
+.pinned {
+  width: 100%;
+  background-color: #fff;
+  position: fixed !important; }
+
+/*# sourceMappingURL=index.css.map */

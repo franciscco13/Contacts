@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url('TiemposHeadlineWeb-Light.eot');
+    src: url('TiemposHeadlineWeb-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url('TiemposHeadlineWeb-LightItalic.eot');
+    src: url('TiemposHeadlineWeb-LightItalic.eot?#iefix') format('embedded-opentype'),
+         url('TiemposHeadlineWeb-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url('TiemposHeadlineWeb-Bold.eot');
+    src: url('TiemposHeadlineWeb-Bold.eot?#iefix') format('embedded-opentype'),
+         url('TiemposHeadlineWeb-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url('TiemposHeadlineWeb-BoldItalic.eot');
+    src: url('TiemposHeadlineWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('TiemposHeadlineWeb-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Tiempos';
+    src: url('TiemposTextWeb-Regular.eot');
+    src: url('TiemposTextWeb-Regular.eot?#iefix') format('embedded-opentype'),
+         url('TiemposTextWeb-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tiempos';
+    src: url('TiemposTextWeb-RegularItalic.eot');
+    src: url('TiemposTextWeb-RegularItalic.eot?#iefix') format('embedded-opentype'),
+         url('TiemposTextWeb-RegularItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}

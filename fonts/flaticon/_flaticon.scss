@@ -1,0 +1,99 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 14/08/2016 02:46
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-add:before { content: "\f100"; }
+.flaticon-artists:before { content: "\f101"; }
+.flaticon-checked:before { content: "\f102"; }
+.flaticon-close:before { content: "\f103"; }
+.flaticon-code:before { content: "\f104"; }
+.flaticon-code2:before { content: "\f105"; }
+.flaticon-comment:before { content: "\f106"; }
+.flaticon-database:before { content: "\f107"; }
+.flaticon-delete:before { content: "\f108"; }
+.flaticon-download:before { content: "\f109"; }
+.flaticon-draft:before { content: "\f10a"; }
+.flaticon-edit:before { content: "\f10b"; }
+.flaticon-favs:before { content: "\f10c"; }
+.flaticon-grid-view:before { content: "\f10d"; }
+.flaticon-historial:before { content: "\f10e"; }
+.flaticon-home:before { content: "\f10f"; }
+.flaticon-info:before { content: "\f110"; }
+.flaticon-keyboard:before { content: "\f111"; }
+.flaticon-list-view:before { content: "\f112"; }
+.flaticon-mail:before { content: "\f113"; }
+.flaticon-menu:before { content: "\f114"; }
+.flaticon-play:before { content: "\f115"; }
+.flaticon-publish:before { content: "\f116"; }
+.flaticon-search:before { content: "\f117"; }
+.flaticon-settings:before { content: "\f118"; }
+.flaticon-statistic:before { content: "\f119"; }
+.flaticon-statistic2:before { content: "\f11a"; }
+.flaticon-tracks:before { content: "\f11b"; }
+.flaticon-up:before { content: "\f11c"; }
+.flaticon-warning:before { content: "\f11d"; }
+    
+    $font-Flaticon-add: "\f100";
+    $font-Flaticon-artists: "\f101";
+    $font-Flaticon-checked: "\f102";
+    $font-Flaticon-close: "\f103";
+    $font-Flaticon-code: "\f104";
+    $font-Flaticon-code2: "\f105";
+    $font-Flaticon-comment: "\f106";
+    $font-Flaticon-database: "\f107";
+    $font-Flaticon-delete: "\f108";
+    $font-Flaticon-download: "\f109";
+    $font-Flaticon-draft: "\f10a";
+    $font-Flaticon-edit: "\f10b";
+    $font-Flaticon-favs: "\f10c";
+    $font-Flaticon-grid-view: "\f10d";
+    $font-Flaticon-historial: "\f10e";
+    $font-Flaticon-home: "\f10f";
+    $font-Flaticon-info: "\f110";
+    $font-Flaticon-keyboard: "\f111";
+    $font-Flaticon-list-view: "\f112";
+    $font-Flaticon-mail: "\f113";
+    $font-Flaticon-menu: "\f114";
+    $font-Flaticon-play: "\f115";
+    $font-Flaticon-publish: "\f116";
+    $font-Flaticon-search: "\f117";
+    $font-Flaticon-settings: "\f118";
+    $font-Flaticon-statistic: "\f119";
+    $font-Flaticon-statistic2: "\f11a";
+    $font-Flaticon-tracks: "\f11b";
+    $font-Flaticon-up: "\f11c";
+    $font-Flaticon-warning: "\f11d";

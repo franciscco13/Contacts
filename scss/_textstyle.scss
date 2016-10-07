@@ -1,0 +1,71 @@
+/* TEXT STYLES */
+
+// For CD Names
+.textstyle-cdname{
+	font-family: "Tiempos", serif; 
+	color: #444;
+	font-weight: 600;}
+
+// For Date
+.textstyle-date{
+	font-family: "Walfork", serif;
+	text-transform: uppercase;
+	font-weight: 400; }
+
+// For Artist Names
+.textstyle-artistname{
+	font-family: "Walfork", serif;
+	text-transform: uppercase;
+	font-weight: 600; }
+
+// For Artist Names
+.textstyle-artistcovername{
+	font-family: "Tiempos Headline", serif; 
+	font-weight: 600; }
+
+
+// For CD Description
+.textstyle-cddescription{
+	font-family: "Tiempos", "Georgia", serif; 
+	text-align: justify;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #222;}
+
+.textstyle-tags{
+	text-transform: uppercase;
+	font-family: "Walfork", serif;	
+	letter-spacing: 1px; 
+	font-weight: 600;}
+
+.textstyle-tabs{
+	@extend .textstyle-tags;
+	font-weight: 700;
+	font-size: 16px; }
+
+.textstyle-tracklist{  
+	font-family: "Tiempos", "Georgia", serif; 
+	color: #222;
+	font-size: 15px;
+	font-weight: 400;}
+
+.textstyle-button{ 
+	text-transform: uppercase;
+	color: #333;
+	font-family: "Roboto";
+	font-size: 16px;
+	font-weight: 600;}
+
+
+.textstyle-cdname-min{
+	font-family: "Walfork", sans-serif;
+	font-weight: 600;
+	
+}
+
+.textstyle-artistname-min{
+	font-family: "Walfork", sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
